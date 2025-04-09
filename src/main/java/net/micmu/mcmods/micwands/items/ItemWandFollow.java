@@ -28,7 +28,7 @@ public class ItemWandFollow extends ItemWand {
     @Override
     protected int onWandInteract(EntityPlayer player, EntityLivingBase entity) {
         final WandsCore wc = WandsCore.getInstance();
-        if (wc.canFollowing(entity)) {
+        if (wc.canFollowing(entity,player)) {  // 添加player参数
             int r = wc.wandFollowing(entity, player);
             if (r >= 0) {
                 int cost = 0;

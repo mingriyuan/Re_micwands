@@ -1,11 +1,13 @@
 package net.micmu.mcmods.micwands.core;
 
+import net.micmu.mcmods.micwands.items.ItemWandEnfeeble;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityGolem;
 import net.minecraft.entity.monster.EntityIronGolem;
 import net.minecraft.entity.monster.EntitySnowman;
 import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
@@ -29,24 +31,21 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.micmu.mcmods.micwands.items.ItemWand;
 
 /**
- *
  * @author Micmu
  */
 @EventBusSubscriber
 final class EventHandlers {
 
     /**
-     *
      * @param event
      */
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onEntityJoinWorld(EntityJoinWorldEvent event) {
         if (!event.getWorld().isRemote && (event.getEntity() instanceof EntityLiving))
-            WandsCore.getInstance().initializeMob((EntityLiving)event.getEntity());
+            WandsCore.getInstance().initializeMob((EntityLiving) event.getEntity());
     }
 
     /**
-     *
      * @param event
      */
     @SubscribeEvent(priority = EventPriority.HIGH)
@@ -57,10 +56,9 @@ final class EventHandlers {
     }
 
     /**
-     *
      * @param event
      */
-    @SubscribeEvent(priority = EventPriority.HIGH)
+        @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onPlayerEntityInteract(PlayerInteractEvent.EntityInteract event) {
         if ((event.getSide() == Side.SERVER) && (event.getHand() == EnumHand.MAIN_HAND) && (event.getTarget() instanceof EntityLivingBase) && !event.isCanceled()) {
             final ItemStack stack = event.getEntityPlayer().getHeldItem(EnumHand.MAIN_HAND);
@@ -72,16 +70,28 @@ final class EventHandlers {
                 }
             }
         }
-    }
+    } 
+    /*@SubscribeEvent(priority = EventPriority.HIGH)
+    public static void onPlayerEntityInteract(PlayerInteractEvent.EntityInteract event) {
+        if ((event.getSide() == Side.SERVER) && (event.getTarget() instanceof EntityLivingBase)) {
+            EntityPlayer caster = event.getEntityPlayer();
+            EntityLivingBase target = (EntityLivingBase) event.getTarget();
+            ItemStack stack = caster.getHeldItem(event.getHand());
+
+            if (stack.getItem() instanceof ItemWandEnfeeble) {
+                int result = WandsCore.getInstance().wandPacify(target, caster);
+                // 处理结果...
+            }
+        }
+    }*/
 
     /**
-     *
      * @param event
      */
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onGolemSetAttackTarget(LivingSetAttackTargetEvent event) {
         if ((event.getTarget() != null) && (event.getEntityLiving() instanceof EntityGolem) && !event.isCanceled()) {
-            EntityGolem golem = (EntityGolem)event.getEntityLiving();
+            EntityGolem golem = (EntityGolem) event.getEntityLiving();
             if (((golem instanceof EntityIronGolem) || (golem instanceof EntitySnowman)) && WandsCore.getInstance().isEnfeebled(event.getTarget())) {
                 if (golem.getAttackTarget() != null)
                     golem.setAttackTarget(null);
@@ -92,11 +102,11 @@ final class EventHandlers {
     }
 
     /**
-     *
      * @param event
      */
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onEntityHurt(LivingHurtEvent event) {
+        // 修改调用点为新方法 isFollowing
         if (!event.getEntityLiving().world.isRemote && ((event.getSource() == DamageSource.FALL) || (event.getSource() == DamageSource.IN_WALL)) && !event.isCanceled() && (event.getAmount() > 0.0F)
                 && WandsCore.getInstance().isFollowing(event.getEntityLiving())) {
             // FOLLOWING MOBS take fall/suffocation damage
@@ -110,7 +120,7 @@ final class EventHandlers {
                     return;
                 }
             }
-            if (WandsCore.getInstance().isNegateWarpDamage((EntityLiving)event.getEntityLiving())) {
+            if (WandsCore.getInstance().isNegateWarpDamage((EntityLiving) event.getEntityLiving())) {
                 // Make mob invulnerable to fall/suffocation damage for few ticks after teleport. Helps them a bit.
                 event.setResult(Result.DENY);
                 event.setCanceled(true);
@@ -119,7 +129,6 @@ final class EventHandlers {
     }
 
     /**
-     *
      * @param event
      */
     @SubscribeEvent(priority = EventPriority.LOW)
@@ -128,7 +137,6 @@ final class EventHandlers {
     }
 
     /**
-     *
      * @param event
      */
     @SuppressWarnings("deprecation")
@@ -137,7 +145,7 @@ final class EventHandlers {
         if (event.getType() == ChatType.GAME_INFO) {
             ITextComponent msg = event.getMessage();
             if (msg instanceof TextComponentTranslation) {
-                String k = ((TextComponentTranslation)msg).getKey();
+                String k = ((TextComponentTranslation) msg).getKey();
                 if ((k != null) && k.startsWith("msg.micwands.", 0) && !net.minecraft.util.text.translation.I18n.canTranslate(k))
                     event.setCanceled(true);
             }

@@ -6,7 +6,6 @@ import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
 
 /**
- * 
  * @author Micmu
  */
 final class AIMobSelfImmolation extends EntityAIBase {
@@ -16,7 +15,6 @@ final class AIMobSelfImmolation extends EntityAIBase {
     private int tick;
 
     /**
-     * 
      * @param creature
      * @param thePanicAI
      * @param thePanicPriority
@@ -28,7 +26,7 @@ final class AIMobSelfImmolation extends EntityAIBase {
     }
 
     /**
-     * 
+     *
      */
     @Override
     public boolean shouldExecute() {
@@ -43,7 +41,6 @@ final class AIMobSelfImmolation extends EntityAIBase {
     }
 
     /**
-     * 
      * @return
      */
     EntityAIBase getPanicAI() {
@@ -51,7 +48,6 @@ final class AIMobSelfImmolation extends EntityAIBase {
     }
 
     /**
-     * 
      * @return
      */
     int getPanicPriority() {

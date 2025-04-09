@@ -8,7 +8,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.village.Village;
 
 /**
- *
  * @author Micmu
  */
 final class AIMobStayInVillage extends EntityAIBase {
@@ -17,7 +16,6 @@ final class AIMobStayInVillage extends EntityAIBase {
     private Vec3d moveTo;
 
     /**
-     *
      * @param creature
      */
     AIMobStayInVillage(EntityCreature creature) {
@@ -44,7 +42,7 @@ final class AIMobStayInVillage extends EntityAIBase {
         if (creature.hasHome() && !creature.isWithinHomeDistanceCurrentPosition()) {
             BlockPos p = creature.getHomePosition();
             if ((p != null) && !WandsCore.getInstance().isFollowing(creature)) {
-                moveTo = RandomPositionGenerator.findRandomTargetBlockTowards(creature, 16, 7, new Vec3d((double)p.getX(), (double)p.getY(), (double)p.getZ()));
+                moveTo = RandomPositionGenerator.findRandomTargetBlockTowards(creature, 16, 7, new Vec3d((double) p.getX(), (double) p.getY(), (double) p.getZ()));
                 return (moveTo != null);
             }
         }

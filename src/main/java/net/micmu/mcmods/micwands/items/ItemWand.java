@@ -70,19 +70,19 @@ public abstract class ItemWand extends Item {
                 }
                 d = getAnimationDuration(r > 0);
                 if (d > 0) {
-                    // Just play some spell animation on the (un)enchanted entity
+                    // 只需对（未）被施魔法的实体播放一些法术动画
                     if ((r > 0) && !entity.isPotionActive(MobEffects.WATER_BREATHING)) {
                         entity.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, d, 0));
                     } else if ((r < 0) && !entity.isPotionActive(MobEffects.NIGHT_VISION)) {
                         entity.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, d, 0));
                     }
                 }
-                // Produce successful use sound
+                // 产生成功的使用声音
                 SoundEvent snd = getSoundSuccess(r > 0);
                 if (snd != null)
                     entity.world.playSound((EntityPlayer)null, entity.posX, entity.posY, entity.posZ, snd, SoundCategory.PLAYERS, 1.0F, getSoundSuccessPitch(r > 0));
             } else {
-                // Produce failure sound
+                // 产生故障声
                 entity.world.playSound((EntityPlayer)null, entity.posX, entity.posY, entity.posZ, SoundEvents.BLOCK_DISPENSER_FAIL, SoundCategory.PLAYERS, 1.0F, 1.0F);
             }
             return true;

@@ -11,7 +11,6 @@ import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.micmu.mcmods.micwands.MicWandsMod;
 
 /**
- *
  * @author Micmu
  */
 public class LootTableHandler {
@@ -24,7 +23,6 @@ public class LootTableHandler {
     private final LootCondition[] NO_LOOT_COND = new LootCondition[0];
 
     /**
-     *
      * @return
      */
     public static LootTableHandler getInstance() {
@@ -32,19 +30,17 @@ public class LootTableHandler {
     }
 
     /**
-     *
      * @param res
      * @param table
      */
     public void initTable(ResourceLocation res, LootTable table) {
         ResourceLocation inject = getInjectionTable(res);
         if (inject != null) {
-            table.addPool(new LootPool(new LootEntry[] { new LootEntryTable(inject, 1, 0, NO_LOOT_COND, "micwands_inject_entry") }, NO_LOOT_COND, new RandomValueRange(1), new RandomValueRange(0, 1), "micwands_inject_pool"));
+            table.addPool(new LootPool(new LootEntry[]{new LootEntryTable(inject, 1, 0, NO_LOOT_COND, "micwands_inject_entry")}, NO_LOOT_COND, new RandomValueRange(1), new RandomValueRange(0, 1), "micwands_inject_pool"));
         }
     }
 
     /**
-     *
      * @param res
      * @return
      */
@@ -86,7 +82,6 @@ public class LootTableHandler {
     }
 
     /**
-     *
      * @param res
      * @param prefix
      * @param suffix

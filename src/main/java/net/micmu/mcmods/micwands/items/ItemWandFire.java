@@ -28,8 +28,8 @@ public class ItemWandFire extends ItemWand {
     @Override
     protected int onWandInteract(EntityPlayer player, EntityLivingBase entity) {
         final WandsCore wc = WandsCore.getInstance();
-        if (wc.canFire(entity)) {
-            int r = wc.wandFire(entity);
+        if (wc.canFire(entity,player)) {
+            int r = wc.wandFire(entity,player);
             player.sendStatusMessage(new TextComponentTranslation("msg.micwands.fire." + r, entity.getName()), true);
             return (r > 0) ? (6 + player.getRNG().nextInt(6)) : -(3 + player.getRNG().nextInt(3));
         }

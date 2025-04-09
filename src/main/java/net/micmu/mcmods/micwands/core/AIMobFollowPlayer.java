@@ -28,7 +28,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 /**
- *
  * @author Micmu
  */
 final class AIMobFollowPlayer extends EntityAIBase {
@@ -53,7 +52,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     private int longTick;
 
     /**
-     *
      * @param creature
      */
     AIMobFollowPlayer(EntityLiving creature) {
@@ -73,7 +71,7 @@ final class AIMobFollowPlayer extends EntityAIBase {
             this.followSpeed = 0.7D;
             this.distFarSq = 64.0D;
             // Helpless little villagers like to stay close
-            this.distCloseSq = ((EntityVillager)creature).isChild() ? 4.0D : 9.0D;
+            this.distCloseSq = ((EntityVillager) creature).isChild() ? 4.0D : 9.0D;
         } else if (creature instanceof AbstractHorse) {
             this.followSpeed = 2.0D;
             this.distFarSq = 81.0D;
@@ -99,7 +97,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @return
      */
     protected long getLastWarp() {
@@ -187,7 +184,7 @@ final class AIMobFollowPlayer extends EntityAIBase {
         } else {
             // Look at player
             if (d < DIST_LOOK)
-                c.getLookHelper().setLookPositionWithEntity(o, 10.0F, (float)c.getVerticalFaceSpeed());
+                c.getLookHelper().setLookPositionWithEntity(o, 10.0F, (float) c.getVerticalFaceSpeed());
             if (--shortTick <= 0) {
                 shortTick = 9 + c.getRNG().nextInt(3);
                 longTick = 0;
@@ -202,7 +199,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @param toPlayer
      * @return
      */
@@ -217,7 +213,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @return
      */
     private boolean attemptShortTeleport() {
@@ -246,7 +241,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @return
      */
     private boolean attemptLongTeleport() {
@@ -315,7 +309,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @param x
      * @param y
      * @param z
@@ -325,26 +318,24 @@ final class AIMobFollowPlayer extends EntityAIBase {
      */
     private boolean teleportTo(int x, int y, int z, float add, boolean longDistance) {
         final Random rnd = creature.getRNG();
-        creature.setLocationAndAngles((double)((float)x + add + (0.1F * rnd.nextFloat())), (double)y, (double)((float)z + add + (0.1F * rnd.nextFloat())), creature.rotationYaw, creature.rotationPitch);
+        creature.setLocationAndAngles((double) ((float) x + add + (0.1F * rnd.nextFloat())), (double) y, (double) ((float) z + add + (0.1F * rnd.nextFloat())), creature.rotationYaw, creature.rotationPitch);
         creature.getNavigator().clearPath();
         this.lastWarp = creature.world.getTotalWorldTime() + (longDistance ? 51L : 26L);
         return true;
     }
 
     /**
-     *
      * @return
      */
     private boolean isCreatureReady() {
         if (creature.isDead || creature.getLeashed())
             return false;
         if (creature instanceof EntityTameable)
-            return !((EntityTameable)creature).isSitting();
+            return !((EntityTameable) creature).isSitting();
         return true;
     }
 
     /**
-     *
      * @return
      */
     private EntityPlayer getOwnerPlayer() {
@@ -364,7 +355,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @param m
      * @param force
      * @return
@@ -411,7 +401,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @param bs
      * @return
      */
@@ -427,7 +416,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @param b
      * @return
      */
@@ -436,7 +424,6 @@ final class AIMobFollowPlayer extends EntityAIBase {
     }
 
     /**
-     *
      * @param world
      * @param p
      * @param bottom
