@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d68bf96d-c1d2-4d41-ab48-e240b6792eb3" name="更改" comment="更新">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_ages.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_enfeeble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_follow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_immolation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_pacify.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_repair_any.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/recipe_silence.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/screenshot1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/forge.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/forgeChunkLoading.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/micwands.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-24_18.42.38-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-25_21.49.48-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-25_21.50.49-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-26_22.15.31-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-26_22.16.50-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.11.11-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.12.33-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.16.12-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.19.13-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.20.07-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.20.56-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.23.13-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_18.41.13-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-27_19.55.27-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-30_13.55.46-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-30_13.58.03-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-30_15.16.13-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-30_15.20.56-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-30_22.08.13-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-03-31_23.51.47-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2025-04-01_00.33.59-server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-23-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-23-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-23-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-23-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-23-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-23-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-24-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-24-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-24-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-24-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-24-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-25-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-25-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-25-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-25-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-25-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-25-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-26-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-26-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-26-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-26-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-26-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-26-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-27-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-27-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-27-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-27-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-27-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-27-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-28-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-28-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-28-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-28-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-28-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-28-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-29-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-29-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-29-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-29-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-29-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-30-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-30-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-30-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-30-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-30-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-30-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-03-31-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-01-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-01-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-01-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-01-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-01-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-01-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-02-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-02-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-02-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-02-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-02-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-02-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-03-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-03-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-03-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-03-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-03-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-03-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-08-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-08-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-08-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-08-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-08-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-08-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2025-04-09-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM-1/data/capabilities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM-1/data/villages_nether.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM-1/forcedchunks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM1/data/capabilities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM1/data/villages_end.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM1/forcedchunks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/advancements/37196d8f-36df-357d-b90d-2af59c6852f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/advancements/d6021e41-7343-3bee-bb0e-33bf78c6e47d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/MicWandsFactions.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/Mineshaft.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/Temple.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/Village.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/capabilities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/villages.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/forcedchunks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/playerdata/37196d8f-36df-357d-b90d-2af59c6852f6.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/playerdata/d6021e41-7343-3bee-bb0e-33bf78c6e47d.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.0.-2.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.2.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.2.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/session.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/stats/37196d8f-36df-357d-b90d-2af59c6852f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/stats/d6021e41-7343-3bee-bb0e-33bf78c6e47d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/DIM-1/data/capabilities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/DIM-1/data/villages_nether.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/DIM-1/forcedchunks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/DIM1/data/capabilities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/DIM1/data/villages_end.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/DIM1/forcedchunks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/advancements/6004b361-ef29-34d2-b89c-32df237908c7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/data/MicWandsFactions.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/data/Mineshaft.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/data/Temple.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/data/Village.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/data/capabilities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/data/villages.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/forcedchunks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/playerdata/6004b361-ef29-34d2-b89c-32df237908c7.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.0.-2.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.2.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/region/r.2.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/session.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/saves/新的世界的副本/stats/6004b361-ef29-34d2-b89c-32df237908c7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runClient.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runServer.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="micwands-master" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mingriyuan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mingriyuan/Re_micwands.git&quot;,
+    &quot;accountId&quot;: &quot;90f73bfe-60d9-4df9-b2b7-649706b52d17&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/core/AIMobFollowPlayer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/core/AIMobStayInVillage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/core/EventHandlers.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/core/FactionManager.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/core/LootTableHandler.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/core/WandsCore.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/micmu/mcmods/micwands/items/ItemWandFire.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2uJH3BeuEHxzvejU5EevqJZxTBY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.micwands-master [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.micwands-master [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.micwands-master.executor&quot;: &quot;Run&quot;,
+    &quot;JavaMethodFindUsagesOptions.isSearchForTextOccurrences&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/MCmod/micwands-master/src/main/java/net/micmu/mcmods/micwands/core/WandsCore.java12&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.20577933&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;D:/Desktop/MCmod/micwands-master/src/main/java/net/micmu/mcmods/micwands/core/WandsCore.java12&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="micwands-master [runClient]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--debug" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="d68bf96d-c1d2-4d41-ab48-e240b6792eb3" name="更改" comment="" />
+      <created>1741959556218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741959556218</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+  </component>
+</project>
