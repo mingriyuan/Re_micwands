@@ -1,0 +1,124 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 3/30/25 3:20 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at net.micmu.mcmods.micwands.core.WandsCore$FactionTargetPredicate.checkDistanceConditions(WandsCore.java:627)
+	at net.micmu.mcmods.micwands.core.WandsCore$FactionTargetPredicate.apply(WandsCore.java:600)
+	at net.micmu.mcmods.micwands.core.WandsCore$FactionTargetPredicate.apply(WandsCore.java:585)
+	at net.minecraft.entity.ai.EntityAINearestAttackableTarget$1.apply(EntityAINearestAttackableTarget.java:56)
+	at net.minecraft.entity.ai.EntityAINearestAttackableTarget$1.apply(EntityAINearestAttackableTarget.java:49)
+	at net.minecraft.world.chunk.Chunk.getEntitiesOfTypeWithinAABB(Chunk.java:936)
+	at net.minecraft.world.World.getEntitiesWithinAABB(World.java:3085)
+	at net.minecraft.entity.ai.EntityAINearestAttackableTarget.shouldExecute(EntityAINearestAttackableTarget.java:76)
+	at net.minecraft.entity.ai.EntityAITasks.onUpdateTasks(EntityAITasks.java:72)
+	at net.minecraft.entity.EntityLiving.updateEntityActionState(EntityLiving.java:760)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2359)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:577)
+	at net.minecraft.entity.monster.EntityMob.onLivingUpdate(EntityMob.java:45)
+	at net.minecraft.entity.monster.AbstractSkeleton.onLivingUpdate(AbstractSkeleton.java:144)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.entity.monster.EntityMob.onUpdate(EntityMob.java:50)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.micmu.mcmods.micwands.core.WandsCore$FactionTargetPredicate.checkDistanceConditions(WandsCore.java:627)
+	at net.micmu.mcmods.micwands.core.WandsCore$FactionTargetPredicate.apply(WandsCore.java:600)
+	at net.micmu.mcmods.micwands.core.WandsCore$FactionTargetPredicate.apply(WandsCore.java:585)
+	at net.minecraft.entity.ai.EntityAINearestAttackableTarget$1.apply(EntityAINearestAttackableTarget.java:56)
+	at net.minecraft.entity.ai.EntityAINearestAttackableTarget$1.apply(EntityAINearestAttackableTarget.java:49)
+	at net.minecraft.world.chunk.Chunk.getEntitiesOfTypeWithinAABB(Chunk.java:936)
+	at net.minecraft.world.World.getEntitiesWithinAABB(World.java:3085)
+	at net.minecraft.entity.ai.EntityAINearestAttackableTarget.shouldExecute(EntityAINearestAttackableTarget.java:76)
+	at net.minecraft.entity.ai.EntityAITasks.onUpdateTasks(EntityAITasks.java:72)
+	at net.minecraft.entity.EntityLiving.updateEntityActionState(EntityLiving.java:760)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2359)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:577)
+	at net.minecraft.entity.monster.EntityMob.onLivingUpdate(EntityMob.java:45)
+	at net.minecraft.entity.monster.AbstractSkeleton.onLivingUpdate(AbstractSkeleton.java:144)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2179)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:295)
+	at net.minecraft.entity.monster.EntityMob.onUpdate(EntityMob.java:50)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1996)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:832)
+	at net.minecraft.world.World.updateEntity(World.java:1958)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:wither_skeleton (net.minecraft.entity.monster.EntityWitherSkeleton)
+	Entity ID: 51208
+	Entity Name: 凋灵骷髅
+	Entity's Exact location: 573.50, 4.00, 1369.50
+	Entity's Block location: World: (573,4,1369), Chunk: (at 13,0,9 in 35,85; contains blocks 560,0,1360 to 575,255,1375), Region: (1,2; contains chunks 32,64 to 63,95, blocks 512,0,1024 to 1023,255,1535)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1762)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:613)
+
+-- Affected level --
+Details:
+	Level name: 新的世界
+	All players: 1 total; [EntityPlayerMP['Player863'/80, l='新的世界', x=571.49, y=4.00, z=1369.35]]
+	Chunk stats: ServerChunkCache: 727 Drop: 0
+	Level seed: 5798422912340563131
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (401,4,1360), Chunk: (at 1,0,0 in 25,85; contains blocks 400,0,1360 to 415,255,1375), Region: (0,2; contains chunks 0,64 to 31,95, blocks 0,0,1024 to 511,255,1535)
+	Level time: 7940 game time, 7940 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 24667 (now: false), thunder time: 70308 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_421, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1352577688 bytes (1289 MB) / 1945632768 bytes (1855 MB) up to 15183380480 bytes (14480 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                             | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------------------ |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                                                      | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                                                      | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | forge     | 14.23.5.2860 | forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | micwands  | 1.0.5        | MobControlWands_1.12.2-1.0.5.jar                                   | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player863'/80, l='新的世界', x=571.49, y=4.00, z=1369.35]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

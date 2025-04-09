@@ -1,0 +1,26 @@
+{
+  "minecraft:recipes/misc/bone_meal_from_bone": {
+    "criteria": {
+      "has_bone": "2025-03-31 20:57:49 +0800"
+    },
+    "done": true
+  },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2025-03-31 20:57:50 +0800"
+    },
+    "done": true
+  },
+  "micwands:recipes/wandpacify": {
+    "criteria": {
+      "a": "2025-03-31 20:57:27 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "desert": "2025-03-31 20:56:49 +0800"
+    },
+    "done": false
+  }
+}
