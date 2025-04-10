@@ -314,7 +314,7 @@ public class FactionManager {
      * 检查是否可以添加新成员
      */
     public boolean canAddMoreMembers(String factionName) {
-        return getFactionMemberCount(factionName) < ModConfig.factionMaxMembers;
+        return getFactionMemberCount(factionName) < ModConfig.factionIMobMaxMembers;
     }
 
     /**
@@ -331,6 +331,6 @@ public class FactionManager {
      * 检查是否达到成员上限
      */
     public boolean isFactionFull(String factionName) {
-        return getFactionMemberCount(factionName) >= ModConfig.factionMaxMembers;
+        return getFactionMemberCount(factionName) >= ModConfig.factionIMobMaxMembers;
     }
 }
