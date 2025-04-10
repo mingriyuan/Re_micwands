@@ -56,7 +56,7 @@ public class ItemWandEnfeeble extends ItemWand {
         } else {
             // 新增错误码处理
             if (r == -2) {
-                player.sendStatusMessage(new TextComponentTranslation("msg.micwands.faction.full", ModConfig.factionMaxMembers), true);
+                player.sendStatusMessage(new TextComponentTranslation("msg.micwands.faction.full", ModConfig.factionIMobMaxMembers), true);
             } else {
                 player.sendStatusMessage(new TextComponentTranslation("msg.micwands.err.worksonly", 
                     new TextComponentTranslation("msg.micwands.err.mob")), true);
