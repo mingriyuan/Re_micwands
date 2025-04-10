@@ -18,11 +18,7 @@ import net.minecraft.entity.ai.*;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.monster.EntityGolem;
-import net.minecraft.entity.monster.EntityIronGolem;
-import net.minecraft.entity.monster.EntitySnowman;
-import net.minecraft.entity.monster.EntitySpellcasterIllager;
-import net.minecraft.entity.monster.IMob;
+import net.minecraft.entity.monster.*;
 import net.minecraft.entity.passive.AbstractHorse;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityTameable;
@@ -512,7 +508,8 @@ public class WandsCore {
             Predicate<EntityLivingBase> predicate = new Predicate<EntityLivingBase>() {
                 @Override
                 public boolean apply(EntityLivingBase target) {
-                    final double MAX_DIST_SQ = 1024;
+                    final int configDistance = ModConfig.aiMaxFollowDistance;
+                    final double MAX_DIST_SQ = configDistance * configDistance;
                     EntityPlayer caster = creature.world.getPlayerEntityByUUID(
                             creature.getEntityData().getUniqueId(NBT_KEY_MiCOWNER)
                     );
@@ -524,12 +521,14 @@ public class WandsCore {
                     }
                     boolean baseCondition = !isInFaction(target) &&
                             (target instanceof IMob) &&
+                            !(target instanceof EntityPigZombie) && // 新增排除僵尸猪人判断
                             (caster != null && caster.world != null); // 增加world非空判断
-
                     // 新增：检测玩家当前攻击目标
                     boolean isCasterTarget = (caster != null) &&
                             (caster.getLastAttackedEntity() == target);
-
+                    // 新增：检测目标是否正在攻击玩家
+                    boolean isAttackingCaster = (target.getRevengeTarget() == caster) || 
+                                                (target.getLastAttackedEntity() == caster);
                     // 修改为服务端玩家列表检测来实现更准确的在线状态判断。以下是修改方案：
                     if (caster != null && caster.world != null) { // 增加双重空指针保护
                         MinecraftServer server = caster.world.getMinecraftServer();
@@ -537,12 +536,12 @@ public class WandsCore {
                             double creatureToCaster = creature.getDistanceSq(caster);
                             double targetToCaster = target.getDistanceSq(caster);
 
-                            return (baseCondition || isCasterTarget)
+                            return (baseCondition || isCasterTarget || isAttackingCaster)  // 添加新条件
                                     && (creatureToCaster <= MAX_DIST_SQ)
                                     && (targetToCaster <= MAX_DIST_SQ);
                         }
                     }
-                    return baseCondition || isCasterTarget;
+                    return baseCondition || isCasterTarget || isAttackingCaster;  // 添加新条件
                 }
             };
             // 修正类型转换问题翻译

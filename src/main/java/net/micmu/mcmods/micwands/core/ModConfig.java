@@ -10,4 +10,8 @@ public class ModConfig {
     @net.minecraftforge.common.config.Config.Comment("阵营最大怪物成员数量(1-50)")
     @net.minecraftforge.common.config.Config.RangeInt(min = 1, max = 50)
     public static int factionIMobMaxMembers = 15;
+    
+    @net.minecraftforge.common.config.Config.Comment("AI最大跟随距离（方块数，1-100）")
+    @net.minecraftforge.common.config.Config.RangeInt(min = 1, max = 64)
+    public static int aiMaxFollowDistance = 16; 
 }
